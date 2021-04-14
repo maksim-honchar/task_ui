@@ -1,0 +1,95 @@
+:root {
+  --main-green-color: #a7c353;
+  --main-black-color: #313131;
+}
+
+body {
+  color: var(--main-black-color);
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: var(--main-black-color);
+}
+
+.post-wrapper {
+  border: 1px solid rgb(85, 56, 214); /* atention */
+  max-width: 1160px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.green-top-block {
+  height: 5px;
+  background-color: var(--main-green-color);
+}
+
+.content-wrapper {
+  border: 1px solid;
+  height: 500px; /* atention */
+  max-width: 1120px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.header {
+  border: 1px solid rgb(34, 53, 6);
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-block {
+  border: 1px solid saddlebrown; /* atention */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-div {
+  font-size: 2.2rem;
+}
+
+.under-title {
+  font-size: small;
+}
+
+/* NAV */
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+  display: block;
+  color: var(--main-black-color);
+  text-align: center;
+  padding: 40px 20px;
+  text-decoration: none;
+}
+
+ul.topnav li:not(.active) a:hover {
+  color: var(--main-green-color);
+}
+
+ .active {
+  background-color: var(--main-green-color);
+}
+
+ul.topnav .active a {
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li {
+    float: none;
+  }
+}
