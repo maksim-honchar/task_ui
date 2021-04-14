@@ -29,7 +29,6 @@ body {
 
 .content-wrapper {
   border: 1px solid;
-  height: 500px; /* atention */
   max-width: 1120px;
   margin: 0 auto;
   background-color: white;
@@ -46,6 +45,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.title-block a {
+  color: var(--main-black-color);
+  text-decoration: none;
 }
 
 .title-div {
@@ -104,4 +108,54 @@ ul.topnav .active a {
 
 .quote-come {
   font-size: xx-large;
+}
+
+/* SLIDER */
+.slider {
+  border: 1px solid red;
+}
+
+.arrow-block {
+  border: 1px solid white;
+  position: absolute;
+  width: 1120px;
+  margin-top: 195px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.big-arrow:hover {
+  cursor: pointer;
+  color: var(--main-green-color);
+}
+
+.fas {
+  font-size: 3.5rem;
+}
+
+.rounds-under-slider {
+  border: 1px solid brown;
+  display: flex;
+  justify-content: center;
+}
+
+.green-round {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: var(--main-green-color);
+  margin: 10px 3px;
+}
+
+.green-round:hover {
+  cursor: pointer;
+}
+
+.green-round.active {
+  border: 2px solid var(--main-green-color);
+  border-radius: 50%;
+  width: 11px;
+  height: 11px;
+  background-color: white;
+  margin: 10px 3px;
 }
