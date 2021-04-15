@@ -31,6 +31,7 @@ body {
 
 .content-wrapper {
   border: 1px solid;
+  width: 100%;
   max-width: 1120px;
   margin: 0 auto;
   background-color: white;
@@ -96,12 +97,6 @@ ul.topnav .active a {
   color: white;
 }
 
-@media screen and (max-width: 600px) {
-  ul.topnav li {
-    float: none;
-  }
-}
-
 /* QUOTE BLOCK */
 .quote-block {
   border: 1px solid rgb(85, 56, 214);
@@ -124,11 +119,12 @@ ul.topnav .active a {
   flex-direction: column;
   position: absolute;
   margin-top: 195px;
+  max-width: 1120px;
+  width: 100%;
 }
 
 .arrow-block {
   border: 1px solid white;
-  width: 1120px;
   display: flex;
   justify-content: space-between;
 }
@@ -144,7 +140,6 @@ ul.topnav .active a {
 
 .description-slider-wrapper {
   border: 1px solid greenyellow;
-  width: 1120px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -311,10 +306,10 @@ img {
   border: 1px solid greenyellow;
 }
 
+/* FOOTER */
 .footer-wrapper {
   background-color: var(--main-black-color);
   color: white;
-  /* height: 500px;  */
 }
 
 .wapper-footer-info {
@@ -458,3 +453,103 @@ img {
 .copyright-text {
   color: var(--footer-text);
 }
+
+/* RESPONSIVE */
+@media screen and (max-width: 1119px) {
+  .title-block {
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .info-block-wrapper {
+    text-align: center;
+  }
+
+  ul.topnav li {
+    float: none;
+  }
+
+  ul.topnav li a {
+    padding: 10px 5px;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .info-block {
+    width: 100%;
+    align-items: center;
+  }
+
+  .company-details-block {
+    width: 100%;
+  }
+
+  .info-block-wrapper {
+  flex-direction: column;
+  }
+
+  .wapper-footer-info {
+  flex-direction: column;
+  }
+
+  .copyright-block {
+  width: 100%;
+  flex-direction: column;
+  }
+
+  .copyrightDiv {
+  background-color: var(--main-black-color);
+  }
+
+  .footer-wrapper {
+    text-align: center;
+  }
+
+  .social-wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+
+   .blog-linkDiv {
+    text-align: left;
+    width: 70px;
+    margin: 0 auto;
+    padding: 10px 0 20px 0;
+  } 
+
+  .button-footer {
+   margin: auto;
+  }
+
+  .copyright-block {
+    background-color: var(--main-black-color);
+    height: auto;
+  }
+}
+
+
+
+@media screen and (max-width: 750px) {
+  .description-slider-wrapper {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper-arrow-description {
+    margin-top: 45px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .wrapper-arrow-description {
+      margin-top: 110px;
+  }
+} 
+
+
+
