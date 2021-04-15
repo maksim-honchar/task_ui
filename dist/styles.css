@@ -504,6 +504,10 @@ img {
     background-color: var(--main-black-color);
     height: auto;
   }
+
+  .hrMobile {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 750px) {
