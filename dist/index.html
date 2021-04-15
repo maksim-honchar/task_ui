@@ -1,378 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Task UI</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="normalize.css" />
-  <link rel="stylesheet" href="styles.css" />
-  <title>Task UI</title>
-</head>
-
-<body>
-  <div class="wrapper">
-    <div class="post-wrapper">
-      <div class="green-top-block"></div>
-      <div class="content-wrapper">
-        <header>
-          <div class="header">
-            <div class="title-block">
-              <a href="#">
-                <div class="title-div">Clearcut</div>
-                <div class="under-title">Free PSD Website Template</div>
-              </a>
+  <body>
+    <div class="wrapper">
+      <div class="post-wrapper">
+        <div class="green-top-block"></div>
+        <div class="content-wrapper">
+          <header>
+            <div class="header">
+              <div class="title-block">
+                <a href="#">
+                  <div class="title-div">Clearcut</div>
+                  <div class="under-title">Free PSD Website Template</div>
+                </a>
+              </div>
+              <nav>
+                <ul class="topnav" id="topnav">
+                  <li class="li active"><a href="#home">HOME</a></li>
+                  <li class="li"><a href="#style_demo">STYLE DEMO</a></li>
+                  <li class="li"><a href="#full_width">FULL WIDTH</a></li>
+                  <li class="li"><a href="#dropdown">DROPDOWN</a></li>
+                  <li class="li"><a href="#portfolio">PORTFOLIO</a></li>
+                  <li class="li"><a href="#gallery">GALLERY</a></li>
+                </ul>
+              </nav>
             </div>
-            <nav>
-              <ul class="topnav" id="topnav">
-                <li class="li active"><a href="#home">HOME</a></li>
-                <li class="li"><a href="#style_demo">STYLE DEMO</a></li>
-                <li class="li"><a href="#full_width">FULL WIDTH</a></li>
-                <li class="li"><a href="#dropdown">DROPDOWN</a></li>
-                <li class="li"><a href="#portfolio">PORTFOLIO</a></li>
-                <li class="li"><a href="#gallery">GALLERY</a></li>
-              </ul>
-            </nav>
+          </header>
+          <div class="quote-block">
+            <blockquote>
+              <q>
+                <em>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                  non erat volutpat, eleifend turpis ut, volutpat risus. Nunc a
+                  tellus pharetra.
+                </em>
+              </q>
+            </blockquote>
           </div>
-        </header>
-        <div class="quote-block">
-          <blockquote>
-            <q>
-              <em>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non erat volutpat, eleifend
-                turpis ut,
-                volutpat risus. Nunc a tellus pharetra.
-              </em>
-            </q>
-          </blockquote>
-        </div>
-        <!-- SIZE PHOTO: 1120 x 450 -->
-        <div class="slider">
-          <div class="wrapper-arrow-description">
-            <div class="arrow-block">
-              <div class="big-arrow"><i class="fas fa-chevron-circle-left"></i></div>
-              <div class="big-arrow"><i class="fas fa-chevron-circle-right"></i></div>
-            </div>
-            <div class="description-slider-wrapper">
-              <div class="wrapper-green-block-text">
-                <div class="slider-green-block">
-                  This Is A Very Long Slider Title
+          <!-- SIZE PHOTO: 1120 x 450 -->
+          <div class="slider">
+            <div class="wrapper-arrow-description">
+              <div class="arrow-block">
+                <div class="big-arrow">
+                  <i class="fas fa-chevron-circle-left"></i>
                 </div>
-                <div class="slider-text infotext">
-                  Duis ornare ligula vitae mauris luctus, quis auctor sem consequat. Suspendisse tincidunt velit at
-                  tortor faucibus, vel luctus nibh aliquam.
+                <div class="big-arrow">
+                  <i class="fas fa-chevron-circle-right"></i>
+                </div>
+              </div>
+              <div class="description-slider-wrapper">
+                <div class="wrapper-green-block-text">
+                  <div class="slider-green-block">
+                    This Is A Very Long Slider Title
+                  </div>
+                  <div class="slider-text infotext">
+                    Duis ornare ligula vitae mauris luctus, quis auctor sem
+                    consequat. Suspendisse tincidunt velit at tortor faucibus,
+                    vel luctus nibh aliquam.
+                  </div>
                 </div>
               </div>
             </div>
+            <img class="pic" src="pics/01.jpg" alt="laptop" />
           </div>
-          <img class="pic" src="pics/01.jpg" alt="laptop">
-        </div>
-        <div class="rounds-under-slider">
-          <div class="green-round"></div>
-          <div class="green-round"></div>
-          <div class="green-round"></div>
-          <div class="green-round"></div>
-          <div class="green-round active"></div>
-        </div>
-        <hr class="line-in-content" />
-        <div class="info-block-wrapper">
-          <div class="info-block about-us">
-            <div class="title-info-block">A Little About Us</div>
-            <div class="block">
-              <img src="infoblock-picks/about-us.jpg" alt="about-us" />
-            </div>
-            <div class="block infotext">
-              Fusce eu auctor elit. Vestibulum at magna dignissim, posuere eros non, malesuada turpis. Vestibulum
-              iaculis tortor erat, at suscipit mi auctor vel. Duis ornare ligula vitae mauris luctus, quis auctor sem
-              consequat. Suspendisse tincidunt velit at tortor faucibus, vel luctus nibh aliquam.
-            </div>
-            <div class="block infotext">
-              Curabitur metus felis, porta vel odio ut, ornare laoreet nunc. Phasellus non egestas velit, vel egestas
-              sem. Vestibulum ante ipsum.
-            </div>
-            <div class="wrapper-infoblock-link block">
-              <a href="about-us" class="infoblock-link">
-                Read More About Us
-                <i class="fas fa-angle-double-right"></i>
-              </a>
-            </div>
+          <div class="rounds-under-slider">
+            <div class="green-round"></div>
+            <div class="green-round"></div>
+            <div class="green-round"></div>
+            <div class="green-round"></div>
+            <div class="green-round active"></div>
           </div>
-          <div class="info-block services">
-            <div class="title-info-block">Some of Our Services</div>
-            <div class="services-block block">
-              <div class="servicess-pic-wrapper">
-                <img src="infoblock-picks/01-services.jpg" alt="service-1" />
+          <hr class="line-in-content" />
+          <div class="info-block-wrapper">
+            <div class="info-block about-us">
+              <div class="title-info-block">A Little About Us</div>
+              <div class="block">
+                <img src="infoblock-picks/about-us.jpg" alt="about-us" />
               </div>
-              <div class="servicess-text-wrapper">
-                <span class="service-title">Service Title</span>
-                <p class="infotext">
-                  Etiam a leo id arcu mattis luctus blandit sit amet nisl. Proin sed enim turpis.
-                </p>
+              <div class="block infotext">
+                Fusce eu auctor elit. Vestibulum at magna dignissim, posuere
+                eros non, malesuada turpis. Vestibulum iaculis tortor erat, at
+                suscipit mi auctor vel. Duis ornare ligula vitae mauris luctus,
+                quis auctor sem consequat. Suspendisse tincidunt velit at tortor
+                faucibus, vel luctus nibh aliquam.
               </div>
-            </div>
-            <div class="services-block block">
-              <div class="servicess-pic-wrapper">
-                <img src="infoblock-picks/02-services.jpg" alt="service-2" />
+              <div class="block infotext">
+                Curabitur metus felis, porta vel odio ut, ornare laoreet nunc.
+                Phasellus non egestas velit, vel egestas sem. Vestibulum ante
+                ipsum.
               </div>
-              <div class="servicess-text-wrapper">
-                <span class="service-title">Service Title</span>
-                <p class="infotext">
-                  Etiam a leo id arcu mattis luctus blandit sit amet nisl. Proin sed enim turpis.
-                </p>
-              </div>
-            </div>
-            <div class="services-block block">
-              <div class="servicess-pic-wrapper">
-                <img src="infoblock-picks/03-services.jpg" alt="service-3" />
-              </div>
-              <div class="servicess-text-wrapper">
-                <span class="service-title">Service Title</span>
-                <p class="infotext">
-                  Etiam a leo id arcu mattis luctus blandit sit amet nisl. Proin sed enim turpis.
-                </p>
-              </div>
-            </div>
-            <div class="services-block block">
-              <div class="servicess-pic-wrapper">
-                <img src="infoblock-picks/04-services.png" alt="service-4" />
-              </div>
-              <div class="servicess-text-wrapper">
-                <span class="service-title">Service Title</span>
-                <p class="infotext">
-                  Etiam a leo id arcu mattis luctus blandit sit amet nisl. Proin sed enim turpis.
-                </p>
-              </div>
-            </div>
-            <div class="wrapper-infoblock-link block">
-              <a href="services" class="infoblock-link">
-                View All of Our Services
-                <i class="fas fa-angle-double-right"></i>
-              </a>
-            </div>
-          </div>
-          <div class="info-block clients-says">
-            <div class="title-info-block">What Our Clients Say</div>
-            <div class="clientssaysblock-wrapper">
-              <div class="clientssays-block block">
-                <div class="icon-quote-div">
-                  <i class="fas fa-quote-left"></i>
-                </div>
-                <div class="title-clients-says">
-                  <span class="service-title clientssays-title">Tommy Tanker</span>
-                  <span class="infotext"> - CEO</span>
-                </div>
-              </div>
-              <div class="clientssays-text infotext">
-                Fusce eu auctor elit. Vestibulum at magna dignissim, posuere eros non, malesuada turpis. Vestibulum
-                iaculis tortor erat, at suscipit mi auctor vel. Duis ornare ligula vitae mauris luctus, quis auctor sem
-                consequat. Suspendisse tincidunt velit at tortor faucibus, vel luctus nibh aliquam. Curabitur metus
-                felis, porta vel odio ut, ornare laoreet nunc. Phasellus non egestas velit, vel egestas
-                sem.
-              </div>
-              <div class="wrapper-infoblock-link clients-says-link">
-                <a href="services" class="infoblock-link">
-                  View This Project
+              <div class="wrapper-infoblock-link block">
+                <a href="about-us" class="infoblock-link">
+                  Read More About Us
                   <i class="fas fa-angle-double-right"></i>
                 </a>
               </div>
             </div>
-            <div class="clientssaysblock-wrapper">
-              <div class="clientssays-block block">
-                <div class="icon-quote-div">
-                  <i class="fas fa-quote-left"></i>
+            <div class="info-block services">
+              <div class="title-info-block">Some of Our Services</div>
+              <div class="services-block block">
+                <div class="servicess-pic-wrapper">
+                  <img src="infoblock-picks/01-services.jpg" alt="service-1" />
                 </div>
-                <div class="title-clients-says">
-                  <span class="service-title clientssays-title">Tommy Tanker</span>
-                  <span class="infotext"> - CEO</span>
+                <div class="servicess-text-wrapper">
+                  <span class="service-title">Service Title</span>
+                  <p class="infotext">
+                    Etiam a leo id arcu mattis luctus blandit sit amet nisl.
+                    Proin sed enim turpis.
+                  </p>
                 </div>
               </div>
-              <div class="clientssays-text infotext">
-                Fusce eu auctor elit. Vestibulum at magna dignissim, posuere eros non, malesuada turpis. Vestibulum
-                iaculis tortor erat, at suscipit mi auctor vel. Duis ornare ligula vitae mauris luctus, quis auctor sem
-                consequat. Suspendisse tincidunt velit at tortor faucibus, vel luctus nibh aliquam.Curabitur metus
-                felis, porta vel odio ut, ornare laoreet nunc. Phasellus non egestas velit, vel egestas
-                sem.
+              <div class="services-block block">
+                <div class="servicess-pic-wrapper">
+                  <img src="infoblock-picks/02-services.jpg" alt="service-2" />
+                </div>
+                <div class="servicess-text-wrapper">
+                  <span class="service-title">Service Title</span>
+                  <p class="infotext">
+                    Etiam a leo id arcu mattis luctus blandit sit amet nisl.
+                    Proin sed enim turpis.
+                  </p>
+                </div>
               </div>
-              <div class="wrapper-infoblock-link clients-says-link">
+              <div class="services-block block">
+                <div class="servicess-pic-wrapper">
+                  <img src="infoblock-picks/03-services.jpg" alt="service-3" />
+                </div>
+                <div class="servicess-text-wrapper">
+                  <span class="service-title">Service Title</span>
+                  <p class="infotext">
+                    Etiam a leo id arcu mattis luctus blandit sit amet nisl.
+                    Proin sed enim turpis.
+                  </p>
+                </div>
+              </div>
+              <div class="services-block block">
+                <div class="servicess-pic-wrapper">
+                  <img src="infoblock-picks/04-services.png" alt="service-4" />
+                </div>
+                <div class="servicess-text-wrapper">
+                  <span class="service-title">Service Title</span>
+                  <p class="infotext">
+                    Etiam a leo id arcu mattis luctus blandit sit amet nisl.
+                    Proin sed enim turpis.
+                  </p>
+                </div>
+              </div>
+              <div class="wrapper-infoblock-link block">
                 <a href="services" class="infoblock-link">
-                  View This Project
+                  View All of Our Services
                   <i class="fas fa-angle-double-right"></i>
                 </a>
               </div>
             </div>
+            <div class="info-block clients-says">
+              <div class="title-info-block">What Our Clients Say</div>
+              <div class="clientssaysblock-wrapper">
+                <div class="clientssays-block block">
+                  <div class="icon-quote-div">
+                    <i class="fas fa-quote-left"></i>
+                  </div>
+                  <div class="title-clients-says">
+                    <span class="service-title clientssays-title"
+                      >Tommy Tanker</span
+                    >
+                    <span class="infotext"> - CEO</span>
+                  </div>
+                </div>
+                <div class="clientssays-text infotext">
+                  Fusce eu auctor elit. Vestibulum at magna dignissim, posuere
+                  eros non, malesuada turpis. Vestibulum iaculis tortor erat, at
+                  suscipit mi auctor vel. Duis ornare ligula vitae mauris
+                  luctus, quis auctor sem consequat. Suspendisse tincidunt velit
+                  at tortor faucibus, vel luctus nibh aliquam. Curabitur metus
+                  felis, porta vel odio ut, ornare laoreet nunc. Phasellus non
+                  egestas velit, vel egestas sem.
+                </div>
+                <div class="wrapper-infoblock-link clients-says-link">
+                  <a href="services" class="infoblock-link">
+                    View This Project
+                    <i class="fas fa-angle-double-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="clientssaysblock-wrapper">
+                <div class="clientssays-block block">
+                  <div class="icon-quote-div">
+                    <i class="fas fa-quote-left"></i>
+                  </div>
+                  <div class="title-clients-says">
+                    <span class="service-title clientssays-title"
+                      >Tommy Tanker</span
+                    >
+                    <span class="infotext"> - CEO</span>
+                  </div>
+                </div>
+                <div class="clientssays-text infotext">
+                  Fusce eu auctor elit. Vestibulum at magna dignissim, posuere
+                  eros non, malesuada turpis. Vestibulum iaculis tortor erat, at
+                  suscipit mi auctor vel. Duis ornare ligula vitae mauris
+                  luctus, quis auctor sem consequat. Suspendisse tincidunt velit
+                  at tortor faucibus, vel luctus nibh aliquam.Curabitur metus
+                  felis, porta vel odio ut, ornare laoreet nunc. Phasellus non
+                  egestas velit, vel egestas sem.
+                </div>
+                <div class="wrapper-infoblock-link clients-says-link">
+                  <a href="services" class="infoblock-link">
+                    View This Project
+                    <i class="fas fa-angle-double-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        <footer>
+          <div class="footer-wrapper">
+            <div class="wapper-footer-info">
+              <div class="company-details-block">
+                <div class="title-footer-block">Company Details</div>
+                <hr class="hr-footer" />
+                <div class="company-details-text first-block">
+                  <span class="span-info">Company name</span>
+                  <br />
+                  <span class="span-info">Street Name & Number</span>
+                  <br />
+                  <span class="span-info">Town</span>
+                  <br />
+                  <span class="span-info">Postcode/Zip</span>
+                </div>
+                <div class="company-details-text second-block">
+                  <span class="span-info"> Tel: xxxxx xxxxxxxxxx </span>
+                  <br />
+                  <span class="span-info">Fax: xxxxx xxxxxxxxxx</span>
+                  <br />
+                  <span class="span-info">
+                    Email:
+                    <a href="mailto: contact@myadmin.com" class="footer-link"
+                      >contact@myadmin.com</a
+                    >
+                  </span>
+                  <br />
+                  <span class="span-info">Postcode/Zip</span>
+                </div>
+                <div class="company-details-text second-block">
+                  <span class="span-info bold-text"> Office Hours </span>
+                  <br />
+                  <span class="span-info">Monday - Friday: 08:00 - 17:30</span>
+                  <br />
+                  <span class="span-info">Saturday: 08:00 - 13:00</span>
+                </div>
+              </div>
+              <div class="company-details-block">
+                <div class="title-footer-block">Stay Social</div>
+                <hr class="hr-footer" />
+                <div class="social-wrapper first-block">
+                  <div>
+                    <i class="fab fa-linkedin"></i>
+                  </div>
+                  <div>
+                    <a href="linkedin.com/account-company" class="footer-link"
+                      >Get linked up in LinkedIn</a
+                    >
+                  </div>
+                </div>
+                <hr class="hr-footer hr-links" />
+                <div class="company-details-text second-block">
+                  <div class="social-wrapper first-block">
+                    <div>
+                      <i class="fab fa-twitter-square"></i>
+                    </div>
+                    <div>
+                      <a href="tweeter.com/account-company" class="footer-link"
+                        >Keep up with our Tweets</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <hr class="hr-footer hr-links" />
+                <div class="company-details-text second-block">
+                  <div class="social-wrapper first-block">
+                    <div>
+                      <i class="fab fa-pinterest-square"></i>
+                    </div>
+                    <div>
+                      <a
+                        href="pinterest.com/account-company"
+                        class="footer-link"
+                        >Photos on Pinterest</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <hr class="hr-footer hr-links" />
+                <div class="company-details-text second-block">
+                  <div class="social-wrapper first-block">
+                    <div>
+                      <i class="fas fa-rss-square"></i>
+                    </div>
+                    <div>
+                      <a
+                        href="rsschanel.com/account-company"
+                        class="footer-link"
+                        >RSS Feed</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <hr class="hr-footer hr-links" />
+              </div>
+              <div class="company-details-block">
+                <div class="title-footer-block">From The Blog</div>
+                <hr class="hr-footer" />
+                <div class="company-details-text">
+                  <span class="span-info bold-text"> Blog Post Title </span>
+                  <br />
+                  <span class="span-info">Posted by Admin on 00.00.0000</span>
+                  <br />
+                  <span class="span-info blog-text">
+                    Praesent in egestas dui. Etiam egestas id magna et bibendum.
+                    Suspendisse imperdiet varius nisl, eu accumsan urna sagittis
+                    id.
+                  </span>
+                  <div class="wrapper-infoblock-link block blog-linkDiv">
+                    <a
+                      href="company.com/blogs/001"
+                      class="infoblock-link link-blog"
+                    >
+                      Read More
+                      <i class="fas fa-angle-double-right"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="company-details-text">
+                  <span class="span-info bold-text"> Blog Post Title </span>
+                  <br />
+                  <span class="span-info">Posted by Admin on 00.00.0000</span>
+                  <br />
+                  <span class="span-info blog-text">
+                    Praesent in egestas dui. Etiam egestas id magna et bibendum.
+                    Suspendisse imperdiet varius nisl, eu accumsan urna sagittis
+                    id.
+                  </span>
+                  <div class="wrapper-infoblock-link block blog-linkDiv">
+                    <a
+                      href="company.com/blogs/002"
+                      class="infoblock-link link-blog"
+                    >
+                      Read More
+                      <i class="fas fa-angle-double-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="company-details-block">
+                <div class="title-footer-block">Contact Us</div>
+                <hr class="hr-footer" />
+                <div class="company-contacts-fields">
+                  <form>
+                    <div class="inputDiv">
+                      <input
+                        type="text"
+                        placeholder="Name"
+                        class="inputFiled input"
+                      />
+                    </div>
+                    <div class="inputDiv">
+                      <input
+                        type="email"
+                        placeholder="Email"
+                        class="inputFiled input"
+                      />
+                    </div>
+                    <div class="inputDiv textarea">
+                      <textarea
+                        placeholder="Message"
+                        rows="6"
+                        class="inputFiled"
+                      ></textarea>
+                    </div>
+                  </form>
+                  <div class="button-footer">SUBMIT</div>
+                </div>
+              </div>
+            </div>
+            <hr class="hr-footer" />
+            <div class="copyright-block">
+              <div>
+                <p class="copyright-text">
+                  Copyright &#169; 2013 Domain Name - All Rights Reserved
+                </p>
+              </div>
+              <div class="copyrightDiv">
+                <p class="copyright-text">Template by OS Templates</p>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
-      <footer>
-        <div class="footer-wrapper">
-          <div class="wapper-footer-info">
-            <div class="company-details-block">
-              <div class="title-footer-block">
-                Company Details
-              </div>
-              <hr class="hr-footer" />
-              <div class="company-details-text first-block">
-                <span class="span-info">Company name</span>
-                <br />
-                <span class="span-info">Street Name & Number</span>
-                <br />
-                <span class="span-info">Town</span>
-                <br />
-                <span class="span-info">Postcode/Zip</span>
-              </div>
-              <div class="company-details-text second-block">
-                <span class="span-info">
-                  Tel: xxxxx xxxxxxxxxx
-                </span>
-                <br />
-                <span class="span-info">Fax: xxxxx xxxxxxxxxx</span>
-                <br />
-                <span class="span-info">
-                  Email: <a href="mailto: contact@myadmin.com" class="footer-link">contact@myadmin.com</a>
-                </span>
-                <br />
-                <span class="span-info">Postcode/Zip</span>
-              </div>
-              <div class="company-details-text second-block">
-                <span class="span-info bold-text">
-                  Office Hours
-                </span>
-                <br />
-                <span class="span-info">Monday - Friday: 08:00 - 17:30</span>
-                <br />
-                <span class="span-info">Saturday: 08:00 - 13:00</span>
-              </div>
-            </div>
-            <div class="company-details-block">
-              <div class="title-footer-block">
-                Stay Social
-              </div>
-              <hr class="hr-footer" />
-              <div class="social-wrapper first-block">
-                <div>
-                  <i class="fab fa-linkedin"></i>
-                </div>
-                <div>
-                  <a href="linkedin.com/account-company" class="footer-link">Get linked up in LinkedIn</a>
-                </div>
-              </div>
-              <hr class="hr-footer hr-links" />
-              <div class="company-details-text second-block">
-                <div class="social-wrapper first-block">
-                  <div>
-                    <i class="fab fa-twitter-square"></i>
-                  </div>
-                  <div>
-                    <a href="tweeter.com/account-company" class="footer-link">Keep up with our Tweets</a>
-                  </div>
-                </div>
-              </div>
-              <hr class="hr-footer hr-links" />
-              <div class="company-details-text second-block">
-                <div class="social-wrapper first-block">
-                  <div>
-                    <i class="fab fa-pinterest-square"></i>
-                  </div>
-                  <div>
-                    <a href="pinterest.com/account-company" class="footer-link">Photos on Pinterest</a>
-                  </div>
-                </div>
-              </div>
-              <hr class="hr-footer hr-links" />
-              <div class="company-details-text second-block">
-                <div class="social-wrapper first-block">
-                  <div>
-                    <i class="fas fa-rss-square"></i>
-                  </div>
-                  <div>
-                    <a href="rsschanel.com/account-company" class="footer-link">RSS Feed</a>
-                  </div>
-                </div>
-              </div>
-              <hr class="hr-footer hr-links" />
-            </div>
-            <div class="company-details-block">
-              <div class="title-footer-block">
-                From The Blog
-              </div>
-              <hr class="hr-footer" />
-              <div class="company-details-text">
-                <span class="span-info bold-text">
-                  Blog Post Title
-                </span>
-                <br />
-                <span class="span-info">Posted by Admin on 00.00.0000</span>
-                <br />
-                <span class="span-info blog-text">
-                  Praesent in egestas dui. Etiam egestas id magna et bibendum. Suspendisse imperdiet varius nisl, eu
-                  accumsan urna sagittis id.
-                </span>
-                <div class="wrapper-infoblock-link block blog-linkDiv">
-                  <a href="company.com/blogs/001" class="infoblock-link link-blog">
-                    Read More
-                    <i class="fas fa-angle-double-right"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div class="company-details-text">
-                <span class="span-info bold-text">
-                  Blog Post Title
-                </span>
-                <br />
-                <span class="span-info">Posted by Admin on 00.00.0000</span>
-                <br />
-                <span class="span-info blog-text">
-                  Praesent in egestas dui. Etiam egestas id magna et bibendum. Suspendisse imperdiet varius nisl, eu
-                  accumsan urna sagittis id.
-                </span>
-                <div class="wrapper-infoblock-link block blog-linkDiv">
-                  <a href="company.com/blogs/002" class="infoblock-link link-blog">
-                    Read More
-                    <i class="fas fa-angle-double-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="company-details-block">
-              <div class="title-footer-block">
-                Contact Us
-              </div>
-              <hr class="hr-footer" />
-              <div class="company-contacts-fields">
-                <form>
-                  <div class="inputDiv">
-                    <input type="text" placeholder="Name" class="inputFiled input" />
-                  </div>
-                  <div class="inputDiv">
-                    <input type="email" placeholder="Email" class="inputFiled input" />
-                  </div>
-                  <div class="inputDiv textarea">
-                    <textarea placeholder="Message" rows="6" class="inputFiled"></textarea>
-                  </div>
-                </form>
-                <div class="button-footer">
-                  SUBMIT
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr class="hr-footer" />
-          <div class="copyright-block">
-            <div>
-              <p class="copyright-text">Copyright &#169; 2013 Domain Name - All Rights Reserved</p>
-            </div>
-            <div class="copyrightDiv">
-              <p class="copyright-text">Template by OS Templates</p>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
-  </div>
 
-  <script src="./bundle.js"></script>
-  <script src="https://kit.fontawesome.com/c43bb57f19.js" crossorigin="anonymous"></script>
-</body>
-
+    <script src="./bundle.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c43bb57f19.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
