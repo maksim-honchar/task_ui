@@ -116,11 +116,16 @@ ul.topnav .active a {
   border: 1px solid red;
 }
 
+.wrapper-arrow-description {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 195px;
+}
+
 .arrow-block {
   border: 1px solid white;
-  position: absolute;
   width: 1120px;
-  margin-top: 195px;
   display: flex;
   justify-content: space-between;
 }
@@ -132,6 +137,34 @@ ul.topnav .active a {
 
 .fas {
   font-size: 3.5rem;
+}
+
+.description-slider-wrapper {
+  border: 1px solid greenyellow;
+  width: 1120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.wrapper-green-block-text {
+  width: 350px;
+  text-align: center;
+  margin-right: 55px;
+}
+
+.slider-green-block {
+  background-color: var(--main-green-color);
+  color: white;
+  font-size: x-large;
+  padding: 5px 0;
+}
+
+.slider-text {
+  background-color: white;
+  margin-top: 8px;
+  text-align: left;
+  padding: 15px 10px;
 }
 
 .rounds-under-slider {
@@ -169,6 +202,7 @@ ul.topnav .active a {
   margin-top: 30px;
 }
 
+/* INFO-BLOCK */
 .info-block-wrapper {
   border: 1px solid red;
   display: flex;
