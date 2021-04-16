@@ -169,6 +169,12 @@ ul.topnav .active a {
 
 .green-round:hover {
   cursor: pointer;
+  border: 2px solid var(--main-green-color);
+  border-radius: 50%;
+  width: 11px;
+  height: 11px;
+  background-color: white;
+  margin: 10px 3px;
 }
 
 .green-round.active {

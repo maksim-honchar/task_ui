@@ -49,10 +49,10 @@
           <div class="slider">
             <div class="wrapper-arrow-description">
               <div class="arrow-block">
-                <div class="big-arrow">
+                <div class="big-arrow prev" onclick="plusSlides(-1)">
                   <i class="fas fa-chevron-circle-left"></i>
                 </div>
-                <div class="big-arrow">
+                <div class="big-arrow next" onclick="plusSlides(1)">
                   <i class="fas fa-chevron-circle-right"></i>
                 </div>
               </div>
@@ -69,14 +69,28 @@
                 </div>
               </div>
             </div>
-            <img class="pic" src="pics/01.jpg" alt="laptop" />
+            <div class="mySlides">
+              <img class="pic" src="pics/01.jpg" alt="laptop" />
+            </div>
+            <div class="mySlides">
+              <img class="pic" src="pics/02.jpg" alt="work place-2" />
+            </div>
+            <div class="mySlides">
+              <img class="pic" src="pics/03.jpg" alt="work place-3" />
+            </div>
+            <div class="mySlides">
+              <img class="pic" src="pics/04.jpg" alt="work place-4" />
+            </div>
+            <div class="mySlides">
+              <img class="pic" src="pics/05.jpg" alt="work place-5" />
+            </div>
           </div>
           <div class="rounds-under-slider">
-            <div class="green-round"></div>
-            <div class="green-round"></div>
-            <div class="green-round"></div>
-            <div class="green-round"></div>
-            <div class="green-round active"></div>
+            <div class="green-round active dot" onclick="currentSlide(1)"></div>
+            <div class="green-round dot" onclick="currentSlide(2)"></div>
+            <div class="green-round dot" onclick="currentSlide(3)"></div>
+            <div class="green-round dot" onclick="currentSlide(4)"></div>
+            <div class="green-round dot" onclick="currentSlide(5)"></div>
           </div>
           <hr class="line-in-content" />
           <div class="info-block-wrapper">
@@ -412,9 +426,44 @@
     </div>
 
     <script src="./bundle.js"></script>
-    <script
-      src="https://kit.fontawesome.com/c43bb57f19.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/c43bb57f19.js" crossorigin="anonymous"></script>
+<script>
+      let slideIndex = 1
+      showSlides(slideIndex)
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n)
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n)
+      }
+      
+      function showSlides(n) {
+        let i
+        const slides = document.getElementsByClassName('mySlides')
+        const dots = document.getElementsByClassName('dot')
+
+        if (n > slides.length) {
+          {slideIndex = 1}
+        }     
+
+        if (n < 1) {
+          {slideIndex = slides.length}
+        } 
+
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = 'none'
+        }
+
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(' active', '')
+        }
+
+        slides[slideIndex-1].style.display = 'block'
+        dots[slideIndex-1].className += ' active'
+      }
+      </script>
+      
   </body>
 </html>
